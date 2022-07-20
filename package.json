@@ -24,7 +24,9 @@
     "storybook": "start-storybook -p 6006",
     "sb": "yarn run storybook",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=b18a4079c1f6"
+    "chromatic": "npx chromatic --project-token=b18a4079c1f6",
+    "test-sb": "test-storybook",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -55,14 +57,21 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^6.5.9",
     "@storybook/addon-actions": "^6.5.3",
     "@storybook/addon-essentials": "^6.5.3",
+    "@storybook/addon-interactions": "^6.5.9",
     "@storybook/addon-links": "^6.5.3",
     "@storybook/builder-webpack5": "^6.5.3",
+    "@storybook/jest": "^0.0.10",
     "@storybook/manager-webpack5": "^6.5.3",
     "@storybook/node-logger": "^6.5.3",
     "@storybook/preset-create-react-app": "^4.1.0",
     "@storybook/react": "^6.5.3",
+    "@storybook/test-runner": "^0.3.0",
+    "@storybook/testing-library": "^0.0.13",
+    "axe-playwright": "^1.1.11",
+    "cypress": "^10.3.0",
     "msw": "^0.43.1",
     "msw-storybook-addon": "^1.6.3"
   },
